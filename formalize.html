@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" type="text/css" href="css/formalize.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+      <![endif]-->
+        <div id="wrapper">
+          <h1>Formalize-css</h1>
+          <p>Formalize-css is here to reduce time involved with styling forms. Simply include the CSS &amp; you will have an aesthetically pleasing form. You can then add classes or id's to enhance the form.</p>
+          <hr>
+          <h2>Form Example</h2>
+          <form action="#"> <!-- You add a URL here for when you submit the action -->
+            <label for="first-name">First name:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Hank...">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Jones...">
+            <input type="submit" value="Submit now">
+          </form>
+
+          <hr/>
+
+          <h2>Textarea Example</h2>
+          <form action="#">
+            <label for="text-area-example">Write something about yourself:</label>
+            <textarea rows="4" cols="50" id="text-area-example" placeholder="eg. My name is Mike, and I created this site..."></textarea>
+          </form>
+
+          <hr/>
+
+          <h2>Label Example</h2>
+          <form action="demo_form.asp">
+            <fieldset>
+              <legend>Pick one of your favourite fruit</legend>
+                <div>
+                  <label rel="radio" for="applesR">Apples</label>
+                  <input type="radio" name="fruit" id="applesR" value="applesR">
+                </div>
+                <div>
+                  <label rel="radio" for="orangesR">Oranges</label>
+                  <input type="radio" name="fruit" id="orangesR" value="orangesR">
+                </div> 
+                <div> 
+                  <label rel="radio" for="pearsR">Pears</label>
+                  <input type="radio" name="fruit" id="pearsR" value="pearsR">
+                </div>  
+            </fieldset>
+          </form>
+          
+          <form action="demo_form.asp">
+            <fieldset>
+              <legend>Pick all your favourite fruit</legend>
+                <div>
+                  <label rel="checkbox" for="applesC">Apples</label>
+                  <input type="checkbox" name="fruit" id="applesC" value="applesC">
+                </div>
+                <div>
+                  <label rel="checkbox" for="orangesC">Oranges</label>
+                  <input type="checkbox" name="fruit" id="orangesC" value="orangesC">
+                </div> 
+                <div> 
+                  <label rel="checkbox" for="pearsC">Pears</label>
+                  <input type="checkbox" name="fruit" id="pearsC" value="pearsC">
+                </div>  
+            </fieldset>
+          </form>
+          
+          <hr/>      
+
+          <h2>Fieldset & Legend Example</h2>
+          <form action="#">
+            <fieldset>
+              <legend>Example of a fieldset</legend>
+              <label for="Name">Name:</label>
+              <input type="text" id="Name">
+              <label for="Email">Email:</label>
+              <input type="text" id="Email">
+              <label for="Date-of-birth">Date of birth:</label>
+              <input type="text" id="Date-of-birth">
+            </fieldset>
+          </form>
+
+          <hr/>
+
+          <h2>Select</h2>
+          <form action="#">
+            <label for="cars-select">Cars:</label>
+            <select id="cars-select">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <label for="bikes-select">Bikes:</label>
+            <select id="bikes-select">
+              <option value="triumph">Triumph</option>
+              <option value="Norton">Norton</option>
+              <option value="BMW">BWM</option>
+              <option value="Yamaha">Yamaha</option>
+            </select>
+          </form>
+          
+          <h2>Optgroup</h2>
+          <form action="#">
+            <label for="cars-optgroup">Cars:</label>
+            <select id="cars-optgroup">
+              <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+              </optgroup>
+              <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </optgroup>
+            </select>
+          </form>
+
+          <h2>Option</h2>
+          <form action="#">
+            <label for="cars-option">Cars:</label>
+            <select id="cars-option">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          </form>
+          
+          <hr/>
+
+          <h2>Datalist HTML5</h2>
+          <form action="#">
+            <label for="homeworld">Your home planet</label>
+            <input type="text" name="homeworld" id="homeworld" list="planets">
+            <datalist id="planets">
+              <option value="Mercury">
+              <option value="Venus">
+              <option value="Earth">
+              <option value="Mars">
+              <option value="Jupiter">
+              <option value="Pluto">
+              <option value="Saturn">
+              <option value="Neptune">
+              <option value="Uranus"> 
+            </datalist>
+          </form>
+
+          <hr/>      
+
+          <h2>Keygen HTML5</h2>
+          <form action="demo_keygen.asp" method="get">
+            <div>
+              <div>
+                <label for="Username">Username:</label>
+                <input type="text" name="usr_name" id="Username">
+              </div>
+              <div>
+                <label for="Encryption">Encryption:</label>
+                <keygen name="security" id="Encryption">
+              </div>
+            </div> 
+            <input type="submit">
+          </form>
+
+          <hr/>      
+
+          <h2>Button</h2>
+          <form action="#">
+            <input type="button" value="Button here">
+          </form>
+
+          <h2>Reset</h2>
+          <form action="#">
+            <input type="reset" value="Reset">
+          </form>
+
+          <hr/>
+
+          <h2>Upload a file</h2>
+          <form action="#">
+            <input type="File" value="File">
+          </form>
+
+          <hr/>
+
+          <h2>Subscribe to my Newsletter</h2>
+          <form method="post" action="/mailer.php">
+            <fieldset>
+            <p>Subscribe to my Newsletter</p>
+            <input name="email" id="email" type="email" 
+                      placeholder=" Enter your email address here" 
+                      title="Your e-mail address is required so I can reply" 
+                      required 
+                      maxlength="50" 
+                      pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" >
+            <input type="submit" name="submit" class="submit" value="Subscribe!" />
+            </fieldset>
+          </form>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
