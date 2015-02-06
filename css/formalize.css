@@ -5,11 +5,20 @@
 /* Label */
 label { display: block; }
 
+/* Input */
+input, textarea { -webkit-appearance: none; border-radius: 0; }
+
+input[type="radio"] { -webkit-appearance: radio; }
+input[type="checkbox"] { -webkit-appearance: checkbox; }
+
+
 /* Basic field height */
 input[type="text"], 
 input[type="email"], 
 input[type="number"], 
-input[type="password"] { height: 2.25em; padding: 0 0.5em; }
+input[type="password"],
+input[type="search"], 
+input[type="range"] { height: 2.25em; padding: 0 0.5em; }
 
 /* Border */
 input[type="text"], 
@@ -17,6 +26,8 @@ input[type="email"],
 input[type="number"], 
 input[type="password"], 
 input[type="file"],
+input[type="search"], 
+input[type="range"],
 textarea,
 fieldset { border: 1px solid #D5D5D5; }
 
