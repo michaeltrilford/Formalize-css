@@ -1,0 +1,1087 @@
+@charset "UTF-8";
+
+/* html5 boilerplate */
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection,
+ ::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* normalize */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  display: inline-block;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure,
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* =========================================================================
+ *  Typography
+ *  ==========================================================================
+ *
+ *  Typographic Scale Used:
+ *
+ *  6px, 7px, 8px, 9px, 10px, 11px, 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px, 72px, 84px, 96px, 108, 120, 132, 144, 156, 168, 180, 192
+ *  |-------------- +1 --------------|------- +2 -------|--- +3 ---|------------------------------------ +12 -------------------------------------|
+ *
+ *  Important information:
+ *  ----------------------
+ *  » Even though the CSS is structured in a Mobile First approach, the Desktop base font-size: 16px; is used to calulate the em units.
+ *
+ *  H1 - fs:48px; / lh:60px;
+ *  H2 - fs:36px; / lh:48px;
+ *  H3 - fs:24px; / lh:36px;
+ *  H4 - fs:21px; / lh:30px;
+ *  H5 - fs:18px; / lh:24px;
+ *  H6 - fs:16px; / lh:24px;
+ *
+ *  medium - fs:18px; / lh:24px;
+ *  x-medium - fs:21px; / lh:30px;
+ *
+ *  large - fs:60px; / lh:72px;
+ *  x-large - fs:72px; / lh:84px; / mb:48px;
+ *  xx-large - fs:84px; / lh:96px; / mb:48px;
+ *
+ *  ========================================================================== */
+
+html {
+  font-size: 0.75em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1;
+  -moz-font-feature-settings: "kern=1", "liga=1";
+  -moz-font-feature-settings: "kern" on, "liga" on;
+  -ms-font-feature-settings: "kern" 1, "liga" 1;
+  -o-font-feature-settings: "kern", "liga";
+  font-feature-settings: "kern", "liga";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (min-width: 31.25em) {
+  html {
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 0.875em;
+  }
+}
+
+@media only screen and (min-width: 53.125em) {
+  html {
+    font-size: 1em;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+blockquote {
+  font-size: calc(24 / 16 * 1em);
+  line-height: calc(36 / 24);
+  margin: 0;
+  margin-bottom: calc(24 / 24 * 1em);
+  margin: 1.5em 0 2em;
+  font-style: italic;
+  font-weight: 500;
+  color: #333333;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33333333333333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.3125em;
+  line-height: 1.14285714285714;
+}
+
+h5 {
+  font-size: 1.125em;
+  line-height: 1.33333333333333;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  font-size: 1em;
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+a:focus {
+  color: #333;
+}
+
+
+/* Medium */
+
+.medium {
+  font-size: 1.125em;
+  line-height: 1.33333333333333;
+  margin: 0 0 1.33333333333333em 0;
+}
+
+.x-medium {
+  font-size: 1.3125em;
+  line-height: 1.42857142857143;
+  margin: 0 0 1.14285714285714em 0;
+}
+
+
+/* Large */
+
+.large {
+  font-size: 3.75em;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+.x-large {
+  font-size: 4.5em;
+  line-height: 1.16666666666667;
+  margin-bottom: 0.66666666666667em;
+}
+
+.xx-large {
+  font-size: 5.25em;
+  line-height: 1.14285714285714;
+  margin-bottom: 0.57142857142857em;
+}
+
+.small-caps {
+  -ms-font-feature-settings: "smcp";
+  -moz-font-feature-settings: "smcp";
+  -webkit-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+}
+
+.text-figures {
+  -moz-font-feature-settings: 'onum';
+  -ms-font-feature-settings: 'onum';
+  -webkit-font-feature-settings: 'onum';
+  font-feature-settings: 'onum';
+}
+
+.textDG {
+  color: #333;
+}
+
+.textLG {
+  color: #aaa;
+}
+
+
+/* =========================================================================
+ *Baseline Grid - 24px w/ 12px subdivision ( Inspired by http://basehold.it )
+ *========================================================================== */
+
+.baselineGridSetup,
+.baselineGridSetup>body {
+  height: 100vh;
+}
+
+.baselineGridSetup>.baselineGrid,
+.baselineGridSetup>body>.baselineGrid {
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  outline: none !important;
+  margin-bottom: 0;
+  height: auto;
+  overflow-y: hidden;
+}
+
+@media (min-height: 828px) {
+  .baselineGridSetup>.baselineGrid,
+  .baselineGridSetup>body>.baselineGrid {
+    height: 100vh;
+  }
+}
+
+.baselineGridSetup>.baselineGrid div,
+.baselineGridSetup>body>.baselineGrid div {
+  width: calc(100% + 2px);
+  transform: translate(-1px, 0);
+  height: 0.75em;
+  outline: 2px solid skyBlue;
+  opacity: 0.3;
+  outline-offset: -1px;
+  margin-bottom: 0.75em;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(9),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(9) {
+  opacity: 0.28;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(8),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(8) {
+  opacity: 0.24;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(7),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(7) {
+  opacity: 0.2;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(6),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(6) {
+  opacity: 0.18;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(5),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(5) {
+  opacity: 0.14;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(4),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(4) {
+  opacity: 0.1;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(3),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(3) {
+  opacity: 0.08;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(2),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(2) {
+  opacity: 0.04;
+}
+
+.baselineGridSetup>.baselineGrid div:nth-last-of-type(1),
+.baselineGridSetup>body>.baselineGrid div:nth-last-of-type(1) {
+  opacity: 0;
+}
+
+.baselineGridSetup:active .baselineGrid,
+.baselineGridSetup>body:active .baselineGrid {
+  display: none;
+}
+
+
+/* =========================================================================
+ *
+ *  Baseline Scale Values:
+ *
+ *  0.75em (12px), 1.5em (24px), 2.25em (36px), 3em (48px), 3.75em (60px), 4.5em (72px), 5.25em (84px), 6em (96px), 6.75em (108px), 7.5em (120px)
+ *
+ *  ========================================================================== */
+
+h1,
+h2,
+h3,
+p,
+header,
+table,
+figure,
+footer,
+details,
+section,
+article,
+dl,
+menu,
+ul,
+ol,
+aside,
+div,
+hr,
+fieldset,
+textarea,
+keygen,
+select,
+input {
+  margin: 0 0 1.5em 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 0 0 0.5em 0;
+}
+
+h2 {
+  margin: 0 0 0.66666666666667em 0;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+h4 {
+  margin: 0 0 1.14285714285714em 0;
+}
+
+h5 {
+  margin: 0 0 1.33333333333333em 0;
+}
+
+h6,
+li {
+  margin: 0 0 1.5em 0;
+}
+
+label {
+  margin-bottom: 0.375em;
+}
+
+summary {
+  margin-bottom: 0;
+}
+
+details p {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================================
+  Horizontal Rule
+  @mixin ========================================================================= */
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: calc(1.5rem - 1px);
+}
+
+
+/* =========================================================================
+ *Selection Styles
+ *========================================================================== */
+
+::-moz-selection,
+ ::selection {
+  background: #333;
+  color: white;
+  text-shadow: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================================
+ *
+ *  List Styles
+ *
+ *  General List Styles
+ *
+ *  ========================================================================== */
+
+ul,
+ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul li ul {
+  margin-top: 0.85714285714286em;
+  margin-bottom: 1.71428571428571em;
+  color: #777;
+  font-size: 0.875em;
+}
+
+ul li ul li {
+  line-height: 1.71428571428571;
+  margin-bottom: 0.85714285714286em;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+  margin-bottom: 0.75em;
+}
+
+ul.cancel-list-style,
+ol.cancel-list-style {
+  list-style: none;
+}
+
+ul.cancel-list-style li,
+ol.cancel-list-style li {
+  padding-left: 0;
+  text-indent: 0;
+}
+
+
+/* =========================================================================
+ *
+ *  Fancy - Unordered List
+ *
+ * <ul class="fancyList">
+ *  <li>Coffee</li>
+ *  <li>Tea</li>
+ *  <li>Milk</li>
+ * </ul>
+ *
+ *  ========================================================================== */
+
+ul.fancyList {
+  list-style: none;
+}
+
+.fancyList li {
+  position: relative;
+  padding-left: 1em;
+  text-indent: 0;
+}
+
+.fancyList li:after {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 0.375em solid #ccc;
+  border-top: 0.1875em solid transparent;
+  border-bottom: 0.1875em solid transparent;
+}
+
+.nested li ul li {
+  padding: 0;
+}
+
+.nested li ul li:after {
+  display: none;
+}
+
+[class^="button"] {
+  background-color: #333333;
+  color: white;
+  padding: 0 1.5em;
+  text-decoration: none;
+  line-height: 2.25;
+  height: 2.25em;
+  display: inline-block;
+}
+
+[class^="button"]:hover,
+[class^="button"]:focus {
+  opacity: 0.8;
+  color: white;
+}
+
+.button--rounded {
+  border-radius: 1.5em;
+}
+
+
+/* =========================================================================
+ *Wrapper Styles
+ *==========================================================================
+ *<main>
+ * <section class="wrapper"></section>
+ *</main>
+ *========================================================================== */
+
+[class^="wrapper"] {
+  width: 95%;
+  width: calc( 100% - 3em);
+  max-width: 73.75em;
+  margin: 0 auto;
+  padding: 1.5em 0;
+  min-width: 18.75em;
+}
+
+.wrapper--fluid {
+  max-width: 100%;
+}
+
+.wrapper--small {
+  max-width: 33.75em;
+}
+
+.wrapper--medium {
+  max-width: 43.75em;
+}
+
+.wrapper--large {
+  max-width: 73.75em;
+}
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+
+@font-face {
+  font-family: 'UniversLTPro-65Bold';
+  src: url("../fonts/mikes-website.eot");
+  src: url("../fonts/mikes-website.eot?#iefix") format("embedded-opentype"), url("../fonts/mikes-website.woff2") format("woff2"), url("../fonts/mikes-website.woff") format("woff"), url("../fonts/mikes-website.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: "UniversLTPro-65Bold", Verdana, sans-serif;
+}
+
+html {
+  font-size: 1em;
+}
+
+html h1 {
+  font-size: calc(36 / 16 * 1em);
+  line-height: calc(48 / 36);
+  margin: 0;
+  margin-bottom: calc(24 / 36 * 1em);
+}
+
+html h2 {
+  font-size: calc(24 / 16 * 1em);
+  line-height: calc(36 / 24);
+  margin: 0;
+  margin-bottom: calc(24 / 24 * 1em);
+}
+
+@media only screen and (min-width: 31.25em) {
+  html {
+    font-size: 1em;
+  }
+  html h1 {
+    font-size: calc(48 / 16 * 1em);
+    line-height: calc(60 / 48);
+    margin: 0;
+    margin-bottom: calc(24 / 48 * 1em);
+  }
+  html h2 {
+    font-size: calc(36 / 16 * 1em);
+    line-height: calc(48 / 36);
+    margin: 0;
+    margin-bottom: calc(24 / 36 * 1em);
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 53.125em) {
+  html {
+    font-size: 1em;
+  }
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.wrapper {
+  max-width: 37.5em;
+  padding: 3em 0;
+  z-index: 10000;
+  position: relative;
+}
+
+hr {
+  margin: 1.5em 0;
+  height: 0;
+  margin-top: calc(1.5rem - 1px);
+}
+
+@media only screen and (min-width: 31.25em) {
+  hr {
+    margin: 3em 0;
+    margin-top: calc(3rem - 1px);
+  }
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  box-shadow: 0 1px 0 0 #333333;
+}
+
+
+/* No Margin top or bottom */
+
+.nmb {
+  margin-bottom: 0px;
+}
+
+.nmt {
+  margin-top: 0px;
+}
+
+.nmr {
+  margin-right: 0px;
+}
+
+
+/* No Padding top or bottom */
+
+.npb {
+  padding-bottom: 0px;
+}
+
+.npt {
+  padding-top: 0px;
+}
+
+
+/* No border bottom */
+
+.nbb {
+  border-bottom: none;
+}
+
+.nbb:hover {
+  border-bottom: none;
+}
+
+
+/* =========================================================================
+  Helper classes
+  @mixin ========================================================================= */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.cf:before {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.addBlock {
+  display: block !important;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.mt-12 {
+  margin-top: 0.75rem;
+}
+
+.mt-24 {
+  margin-top: 1.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-24 {
+  margin-bottom: 1.5rem;
+}

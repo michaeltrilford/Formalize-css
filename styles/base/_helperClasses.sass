@@ -1,0 +1,68 @@
+/* =========================================================================
+  Helper classes
+  ========================================================================== */
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  *text-indent: -9999px
+  &:before
+    content: ""
+    display: block
+    width: 0
+    height: 150%
+
+.hidden
+  display: none
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  &.focusable
+    &:active, &:focus
+      clip: auto
+      height: auto
+      margin: 0
+      overflow: visible
+      position: static
+      width: auto
+
+.invisible
+  visibility: hidden
+
+.cf
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+  *zoom: 1
+
+.addBlock
+  display: block !important
+.show
+  opacity: 1 !important
+
+.pull-right
+  float: right
+.pull-left
+  float: left
+
+.mt-12
+  margin-top: 0.75rem
+.mt-24
+  margin-top: 1.5rem
+.mb-12
+  margin-bottom: 0.75rem
+.mb-24
+  margin-bottom: 1.5rem
+
+
